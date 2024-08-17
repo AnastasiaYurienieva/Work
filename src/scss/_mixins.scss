@@ -1,0 +1,93 @@
+@mixin header {
+    background-image: url(../img/img\ \(2\).png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+
+@mixin navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid $color_6;
+}
+
+@mixin logo {
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+@mixin nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 -1px;
+}
+
+@mixin nav-list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 1px;}
+
+@mixin nav-link { 
+text-transform: uppercase;
+font-family: $font_1;
+font-size: $fs6;
+font-weight: 600;
+color: $color_1;
+padding: 35px 34px;}
+
+@mixin main-title {
+    font: $font_1;
+    font-size: $fs1;
+    color: $color_1;
+    text-align: center;
+    width: 1170px;
+    margin: 0 auto 42px;
+}
+
+@mixin text {
+    color: $color_1;
+    font-family: $font_1;
+    font-size: $fs4;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 80px;
+    width: 1170px;
+    }
+
+@mixin btn {
+     display: block; 
+     margin: auto;   
+     width: 370px;
+     padding: 20px;
+     background-color: $color_4;
+     cursor: pointer;}
+
+@mixin btn-text {
+        color: $color_1;
+        font-family: $font_1;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        }
+
+@mixin btn-hover {
+            color: $color_8;
+            font-size: $fs2;
+            transition-duration: 0.3s;
+            transition-delay: 0.2s;
+               }
+    
+@mixin btn-active {
+                 filter: drop-shadow(0 0 3px rgba(80, 2, 2, 0.129));
+                transform: rotate(40deg);
+                transition-duration: 0.8s;
+                             }

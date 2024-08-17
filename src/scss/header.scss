@@ -1,0 +1,58 @@
+header {
+    @include header;
+    padding-bottom: 120px;
+}
+.header-body {
+    padding: 0 170px;
+}
+.navigation-wrap {
+    @include navigation;
+    margin-bottom: 120px;
+    
+}
+.logo-wrap { 
+    @include logo
+}
+.menu {
+    .nav-list {
+        @include nav-list;
+    .nav-list-item{
+        @include nav-list-item;
+    .nav-link {
+        @include nav-link
+    }
+    }
+    }
+}
+.nav-link:hover {
+    border-bottom: 3px solid $color_6;
+    
+  }
+  .nav-link:active {
+    color: $color_16;
+    border-bottom: 3px solid $color_16;
+    }
+
+.main-content {
+    .main-title {
+        @include main-title
+           }
+    .text p {
+        @include text
+    }
+    .btn-header {
+        @include btn;
+        .btn-link{
+            @include btn-text
+        }
+
+    }
+}
+
+.btn-header:hover {
+    @include btn-hover
+}
+
+.btn-header:active {
+    @include btn-active
+}
