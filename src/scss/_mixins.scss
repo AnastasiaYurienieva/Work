@@ -48,6 +48,7 @@ font-size: $fs6;
 font-weight: 600;
 color: $color_1;
 padding: 35px 34px;
+transition: 1s;
 }
 
 @mixin nav-link-hover {
@@ -56,6 +57,7 @@ padding: 35px 34px;
 
 @mixin nav-link-active {
     border-bottom: 3px solid $color_16;
+    background-color: $color_16;
     }
 
 @mixin main-title {
@@ -84,8 +86,7 @@ padding: 35px 34px;
      padding: 20px;
      background-color: $color_4;
      cursor: pointer;
-
-     position: relative;
+  
 
      animation-name: btn;
      animation-duration: 22s;

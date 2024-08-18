@@ -1,7 +1,10 @@
 .project-name {
     margin: 0 -2px;
-      
+      }
+.container-pr {
+    max-width: 1170px;
 }
+
 .grid-parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -69,7 +72,7 @@ grid-row: 1 / 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-      
+          
    .grid-link-title {
     font-family: $font_1;
     font-size: $fs4;
@@ -77,21 +80,22 @@ grid-row: 1 / 2;
     font-weight: 900;
     color: $color_1;
     margin-top: 120px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
 }
+
 .grid-link-text {
     font-family: $font_1;
     font-weight: 400;
     font-size: $fs5;
     text-align: center;
-    color: $color_1;
+    color: $color_1;    
     } 
 }
 
 .grid-item {
     position: relative;
-    z-index: 2;
-}
+   }
+
 .grid-item::after {
     content: ' ';
     position: absolute;
@@ -125,7 +129,9 @@ grid-row: 1 / 2;
     font-size: $fs4;
     text-align: center;
     font-weight: 900;
-    color: $color_1;      
+    color: $color_1; 
+    visibility: hidden;
+      
 }
 
 .grid-link::before {
@@ -138,25 +144,25 @@ grid-row: 1 / 2;
     font-size: $fs5;
     text-align: center;
     color: $color_1;
-    z-index: -1;
-   }
+    visibility: hidden;
+       }
 
-.grid-link:active {
+.grid-link:active::after {
+    visibility: visible;
     
 }   
 
 .grid-link:hover::after {
+    visibility: visible;
     
 }
 
-.grid-link:active::after {
+.grid-link:active::before {
+    visibility: visible;
 
 }
 
-.grid-link:hover {
-    
+.grid-link:hover::before {
+    visibility: visible;
 }
 
-.grid-link:active::after {
-
-}
