@@ -1,0 +1,28 @@
+.inform {
+    padding: 120px 0;
+       }
+
+.first-three{
+    @include first-three
+}
+.second-three {
+    @include second-three
+}
+.card-wrap-inform {
+    @include card-wrap-inform; 
+       .card-img-inform {
+    @include card-img-inform;
+           img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;}
+}
+.card-title-inform {
+    @include card-title-inform
+    }
+
+.inform-card-text {
+    @include inform-card-text
+    }
+}

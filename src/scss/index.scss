@@ -2,8 +2,13 @@
 @import './cdn';
 @import './var';
 @import './mixins';
-@import './swiper.scss';
 @import './header.scss';
+@import './inform.scss';
+@import './project-name.scss';
+@import './workers.scss';
+@import './swiper.scss';
+@import './download.scss';
+@import './footer.scss';
 
 
 html {
@@ -11,7 +16,7 @@ html {
 }
 
 .container{
-    max-width: 11700px;
-    padding: 0 15px;
-    margin: 0 auto;
+    max-width:1170px;
+    margin: auto;
+    
 }

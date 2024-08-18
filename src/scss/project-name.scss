@@ -1,0 +1,162 @@
+.project-name {
+    margin: 0 -2px;
+      
+}
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2px;
+    }
+
+.grid-item {
+    background-color: $color_1;
+    width: 377px;
+    height: 340px;
+    cursor: pointer;
+            }
+
+.grid-item-1 {
+background-image: url(../img/grid.png);
+@include grid-item;
+grid-column: 1 / 2;
+grid-row: 1 / 2;
+}
+.grid-item-2 {
+    background-image: url(../img/grid-2.png);
+    @include grid-item;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.grid-item-3 {
+    background-image: url(../img/grid-3.png);
+    @include grid-item;
+    grid-column: 3/ 4;
+    grid-row: 1 / 2;
+}
+.grid-item-4 {
+    background-image: url(../img/grid-4.png);
+    @include grid-item;
+    grid-column: 4/ 5;
+    grid-row: 1 / 2;
+}
+.grid-item-5 {
+    background-image: url(../img/grid-5.png);
+    @include grid-item;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.grid-item-6 {
+    background-image: url(../img/grid-6.png);
+    @include grid-item;
+    grid-column: 2/ 3;
+    grid-row: 2 / 3;
+}
+.grid-item-7 {
+    background-image: url(../img/grid-7.png);
+    @include grid-item;
+    grid-column: 3/ 4;
+    grid-row: 2/ 3;
+}
+.grid-item-8 {
+    background-image: url(../img/grid-8.png);
+    @include grid-item;
+    grid-column: 4 / 5;
+    grid-row: 2/ 3;
+}
+.text-grid-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      
+   .grid-link-title {
+    font-family: $font_1;
+    font-size: $fs4;
+    text-align: center;
+    font-weight: 900;
+    color: $color_1;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+.grid-link-text {
+    font-family: $font_1;
+    font-weight: 400;
+    font-size: $fs5;
+    text-align: center;
+    color: $color_1;
+    } 
+}
+
+.grid-item {
+    position: relative;
+    z-index: 2;
+}
+.grid-item::after {
+    content: ' ';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    @include grid-hover;
+    display: none;
+}
+.grid-item:hover::after {
+    display: block;       
+}
+
+.grid-item::before {
+    content: ' ';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    @include grid-active;
+    display: none;
+}
+
+.grid-item:active::before {
+    display: block;
+   
+}
+
+.grid-link::after{
+    content: 'Project name';
+    position: absolute;
+    top: 120px;
+    left: 110px;
+    font-family: $font_1;
+    font-size: $fs4;
+    text-align: center;
+    font-weight: 900;
+    color: $color_1;      
+}
+
+.grid-link::before {
+    content: 'User Interface Design';
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    font-family: $font_1;
+    font-weight: 400;
+    font-size: $fs5;
+    text-align: center;
+    color: $color_1;
+    z-index: -1;
+   }
+
+.grid-link:active {
+    
+}   
+
+.grid-link:hover::after {
+    
+}
+
+.grid-link:active::after {
+
+}
+
+.grid-link:hover {
+    
+}
+
+.grid-link:active::after {
+
+}

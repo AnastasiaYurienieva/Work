@@ -1,0 +1,62 @@
+footer {
+    background-color: $color_12; 
+    }
+    
+.footer-section {
+    @include footer-section;
+    padding-top: 60px;
+    }
+
+.left {
+    @include card-footer;
+    .footer-title {
+    @include h4;
+    margin-bottom: 30px;
+}
+     .footer-text {
+    @include footer-text;
+}}
+
+.center {
+    @include card-footer;
+       .footer-title {
+    @include h4;
+    margin-bottom: 40px;}
+     .footer-icons {
+    @include icons;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -10px;
+}
+    .footer-icons-item {
+    @include icons-item;
+    margin: 0 10px;
+}
+    .fa-brands {
+    @include fa-brands
+}}
+
+.right{
+   @include card-footer;
+     .footer-title {
+        @include h4;
+        margin-bottom: 30px;
+     }
+     .footer-text {
+        @include footer-text
+     }
+}
+
+.footer-copyright {
+    background-color: $color_13;
+    padding: 20px 0;
+}
+
+.text-copyright {
+    width: 370px;
+    display: block;
+    margin: auto;
+     p {
+        @include text-copyright     
+     }
+}
