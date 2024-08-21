@@ -8,7 +8,9 @@
 @import './workers.scss';
 @import './swiper.scss';
 @import './download.scss';
+@import './contact.sccs';
 @import './footer.scss';
+@import './mobile-media.scss';
 
 
 html {
@@ -17,6 +19,6 @@ html {
 
 .container{
     max-width:1170px;
-    margin: auto;
+    margin: 0 auto;
     
 }

@@ -1,0 +1,48 @@
+.contact {
+    background-color: $color_12; 
+    }
+    
+.contact-wrap {
+    @include contact-wrap;
+    padding: 60px 0;
+    }
+
+.left {
+    @include card-contact;
+    .contact-title {
+    @include h4;
+    margin-bottom: 30px;
+}
+     .contact-text {
+    @include contact-text;
+}}
+
+.center {
+    @include card-contact;
+       .contact-title {
+    @include h4;
+    margin-bottom: 40px;}
+     .contact-icons {
+    @include icons;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -10px;
+}
+    .contact-icons-item {
+    @include icons-item;
+    margin: 0 10px;
+}
+    .fa-brands {
+    @include fa-brands
+}}
+
+.right{
+   @include card-contact;
+     .contact-title {
+        @include h4;
+        margin-bottom: 30px;
+     }
+     .contact-text {
+        @include contact-text
+     }
+}

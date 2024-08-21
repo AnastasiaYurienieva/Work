@@ -1,0 +1,257 @@
+@media (max-width:320px) {
+    .container {
+        min-width: 320px;
+        padding: 0 15px;
+    }
+header {
+    padding-bottom: 50px;
+  .navigation-wrap {
+    border-bottom: 1px transparent;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.logo-wrap {
+
+.active-logo {width: 67.7px;
+}
+.box-logo {width: 34px;
+}}
+
+.menu {
+    display: none;
+}
+
+.main-content {
+    .main-title {
+    font-size: 2.25rem;
+    width: 280px;
+    margin-bottom: 40px;
+    
+}
+   .text {
+    font-size: 0.875rem;
+    
+      p{
+        width: 280px;
+        margin-bottom: 40px;
+      }
+}
+   .btn-header {
+    font-size: 0.5rem;
+    width: 17.5rem;
+
+}
+   .btn-link {
+    font-size: 1.5rem;
+}
+}
+}
+.inform {
+    padding: 40px 0;
+
+.first-three {
+    display: block;
+    margin-bottom: 0;
+}
+.card-wrap-inform {
+    width: 279px;
+    margin-bottom: 40px;
+}
+.card-img-inform {
+    width: 75px;
+    height: 75px;
+}
+.card-title-inform {
+    font-size: 1.125rem;
+}
+.inform-card-text {
+    font-size: 0.875rem;
+}
+.second-three {
+    display: block;
+}}
+
+.project-name {
+
+.container-p {
+    max-width: 320px;
+    margin: 0;
+}
+.grid-parent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2px;
+
+}
+.grid-item {
+    width: 160px;
+    height: 144px;
+}
+.grid-item-3 {
+    grid-column: 1/ 2;
+    grid-row: 2 / 3; 
+}
+.text-grid-wrap {
+}
+.grid-link-title {
+    margin-top: 45px;
+    font-size: 1.125rem;
+    margin-bottom: 5px;
+}
+.grid-link-text {
+    font-size: 0.875rem;
+}
+.grid-item-4 {
+    grid-column: 2/3;
+    grid-row: 2/ 3;
+}
+.grid-item-5 {
+    grid-column: 1/2;
+    grid-row: 3/ 4;
+}
+.grid-item-6 {
+    grid-column: 2/3;
+    grid-row: 3 / 4;
+}
+.grid-item-7 {
+    grid-column: 1/ 2;
+    grid-row: 4/ 5;
+}
+.grid-item-8 {
+    grid-column: 2/ 3;
+    grid-row: 4 / 5;
+}}
+
+.workers {
+    padding: 30px 0;
+
+.workers-wrap {
+    display: block;
+
+}
+.workers-wrap-card {
+    width: 280px;
+    margin-bottom: 40px;
+}
+.img-workers {
+    width: 280px;
+    height: 227.25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    }
+
+.worker {
+    font-size: 1.125rem;
+}
+.profession {
+    font-size: 0.875rem;
+}
+.workers-card-text {
+    font-size: 0.875rem;
+}
+.workers-wrap-card:last-child {
+    margin-bottom: 0;
+}}
+
+.slider {
+    padding: 0;
+.container {
+    padding: 0;
+}
+.swiper {
+    max-width: 320px;
+    height: 570px;
+    padding: 0;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+    flex-direction: column;
+    }
+.img-slider-wrapper {
+    width: 320px;
+    height: 212px;
+    }
+.img-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.left-part-slider {
+    width: 326px;
+}
+.slider-title {
+    font-size: 1.5rem;
+    width: 275px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.slider-text {
+    font-size: 0.75rem;
+    width: 275px;
+    margin-bottom: 95px;
+}
+}
+
+.download {
+  .download-wrap {
+    width: 280px;
+}
+.title-dowload {
+    font-size: 1.125rem;
+    margin-top: 50px;
+}
+.text-download {
+    font-size: 0.813rem;
+    margin-bottom: 10px;
+}
+.btn-download {
+    width: 279px;
+    margin-bottom: 50px;
+}
+.btn-link {
+    font-size: 1.125rem;
+}}
+
+.contact {
+.contact-wrap {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+    }
+.left {
+    width: 279px;
+    margin-bottom: 60px;
+}
+.contact-title {
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+}
+.contact-text {
+    font-size: 0.875rem;
+}
+.center {
+    width: 279px;
+    margin-bottom: 60px;
+    }
+.right {
+    width: 279px;
+}}
+
+footer{
+.container {
+    padding: 0;
+}
+.wrap-footer {
+    width: 320px;
+}
+.text-copyright {
+    width: 320px;
+    p{
+        font-size: 0.875rem;
+    }
+}}
+}

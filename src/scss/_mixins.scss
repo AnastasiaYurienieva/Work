@@ -241,7 +241,7 @@ font-weight: 700;
 text-transform: uppercase;
 }     
 
- @mixin footer-text {
+ @mixin contact-text {
             font-family: $font_1;
             font-weight: 400;
             font-size: $fs5;
@@ -249,15 +249,14 @@ text-transform: uppercase;
             color: $color_1;
     }
 
-@mixin footer-section {
-    margin-bottom: 60px;
+@mixin contact-wrap {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: nowrap;
     }
 
-@mixin card-footer {
+@mixin card-contact {
     width: 370px;
     display: flex;
     flex-direction: column;
