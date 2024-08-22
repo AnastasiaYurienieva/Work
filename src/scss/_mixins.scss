@@ -145,7 +145,7 @@ transition: 1s;
  }
     
 @mixin btn-active {
-    box-shadow: 10px 20px 40px 40px rgb(255, 67, 67);
+    box-shadow: 0 0 30px 30px rgb(255, 67, 67);
     border: 1px transparent;
     transition-duration: 0.01s;
                              }
@@ -271,3 +271,11 @@ text-transform: uppercase;
             span {
             color: $color_1;}
      }
+
+     @mixin left-part-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 770px; 
+        }
